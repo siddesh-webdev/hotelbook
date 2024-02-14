@@ -59,7 +59,7 @@ $setting_r = mysqli_fetch_assoc(select($setting_q,$values,'i'));
                 data: {'order':order_id},
                 success:function(result){
                     var options = {
-                            "key": "rzp_test_6uFZuHhsNwB5n3", 
+                            "key": "",//razorpay key 
                             "amount": "<?php echo $TXN_AMOUNT*100?>", 
                             "currency": "INR",
                             "name": "<?php echo $setting_r['title']?>",
